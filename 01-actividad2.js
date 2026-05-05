@@ -5,12 +5,11 @@ fetch(api)
 .then((data)=>{
     data.results.forEach((personaje) => {
         const card=document.createElement("div");
-        card.innerHTML=
+        card.className = "personaje"
+        card.innerHTML=`
         <h2>${personaje.name}</h2>
-        <img src="${personaje.image}" alt="${personaje.name}"></img>
-      
-
-        
+        <img src="${personaje.image}" alt="${personaje.name}"></img>`
+        ;contenido.appendChild(card)
     });
 }
 )

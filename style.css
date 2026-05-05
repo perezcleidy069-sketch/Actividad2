@@ -11,14 +11,42 @@ body{
 }
 
 .titulo{
-    font-size: 30px;
+    font-size: 17px;
     color: rgba(255, 255, 255, 0.836);
+    text-align: center;
 }
 #search{
     border-radius: 8px;
     border: 2px solid rgb(115, 165, 223);
-    font-size: 20px;
+    font-size: 15px;
     margin: 20px ;
+}
+#main{
+    display: flex;
+}
+.personaje{
+    margin: 30px ;
+    display:inline-block;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid lightblue;
+    background-color: rgba(95, 174, 201, 0.427);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(41, 121, 219, 0.273);
+    margin: 5px;
+    width: 200px;
+    height: 150px;
+    
+}
+.personaje h2{
+    font-size: 15px;
+    text-align: center;
+}
+.personaje img{
+    width: 100px;
+    margin: auto;
+    
+
 }
 
 @media (min-width:1280px){
@@ -38,6 +66,11 @@ body{
     #search{
         font-size: 30px;
         margin:7px;
+    }
+    .personaje{
+        margin: 5px;
+        width: 250px;
+        height: 150px;
     }
 
 }
