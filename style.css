@@ -24,7 +24,7 @@ body{
 #main{
     display: flex;
 }
-.personaje{
+.person{
     margin: 30px ;
     display:inline-block;
     justify-items: center;
@@ -38,11 +38,11 @@ body{
     height: 150px;
     
 }
-.personaje h2{
+.person h2{
     font-size: 15px;
     text-align: center;
 }
-.personaje img{
+.person img{
     width: 100px;
     margin: auto;
     
