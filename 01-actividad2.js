@@ -7,7 +7,6 @@ async function obtenerApi() {
     try{
         const respuesta= await fetch(api)
         const datos= await respuesta.json()
-        nombresPersonajes = datos.results.map(personaje => personaje.name);
         datos.results.forEach(personajes => {
             const card=document.createElement("div")
             card.className="person"
@@ -21,8 +20,33 @@ async function obtenerApi() {
         console.log(error)
     }
 }
-
 obtenerApi();
+
+
+async function segundoObtener(){
+    try{
+        const response= await fetch(api)
+        const data= await response.json()
+        data.results.forEach(a=>{
+            const cara=document.createElement("div")
+            cara.className="cari"
+            cara.innerHTML=`
+            <p>${a.status}</p>
+            <p>${a.species}</p>
+            <p>${a.gender}</p>
+            <p>${a.origin.name}`
+            contenido.appendChild(cara)
+        })
+    }
+    catch(erro){
+            console.log(error)
+    }
+}
+segundoObtener();
+
+
+
+
 
 function buscar(){
     let busco=document.getElementById("search").value.toLowerCase();
